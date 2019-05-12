@@ -96,4 +96,5 @@ h1 {
   font-family: $big;
   color: $white;
   font-size: 5em;
+  transition: opacity .5s ease-in;
 }
