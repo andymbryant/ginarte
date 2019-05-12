@@ -36,8 +36,8 @@ body {
 
 .maple {
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: 50%;
+  height: 50%;
   left: 0;
   right: 0;
   top: 13%;
@@ -45,13 +45,19 @@ body {
   background-image: url("img/josemaple.png");
 }
 
+.container {
+  position: relative;
+  top: -30%;
+  margin: 0 auto;
+  width: 80%;
+}
+
 h1 {
   font-family: $handwritten;
-  text-align: center;
   font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 5px;
   color: $red;
+  position: relative;
+  bottom: -20%;
 }
 
 #timer {
@@ -63,7 +69,6 @@ h1 {
   text-transform: uppercase;
   font-family: $normal;
   font-size: .7em;
-  margin-top: -43%;
   letter-spacing: 5px;
   border-radius: $radius;
 }
