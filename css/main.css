@@ -1,0 +1,90 @@
+body {
+  background: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.panel {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 22%;
+  z-index: -100;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.maple {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 0;
+  right: 0;
+  top: 13%;
+  margin: auto;
+  background-image: url("img/josemaple.png");
+}
+
+h1 {
+  font-family: "Covered By Your Grace", cursive;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: red;
+}
+
+#timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 0.7em;
+  margin-top: -43%;
+  letter-spacing: 5px;
+  border-radius: 5px;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px black;
+}
+
+.days {
+  background: #1e4596;
+}
+
+.hours {
+  background: #007241;
+}
+
+.minutes {
+  background: #894997;
+}
+
+.seconds {
+  background: #f4b344;
+}
+
+.numbers {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 5em;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,99 @@
+$normal: Helvetica, Arial, Sans-Serif;
+$handwritten: 'Covered By Your Grace', cursive;
+$big: 'Montserrat', sans-serif;
+$radius: 5px;
+
+$red: red;
+$blue: #1e4596;
+$green: #007241;
+$gold: #f4b344;
+$purple: #894997;
+$white: white;
+
+body {
+  background: $white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.panel {
+  background-color: $red;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 22%;
+  z-index: -100;
+}
+
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+
+.maple {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 0;
+  right: 0;
+  top: 13%;
+  margin: auto;
+  background-image: url("img/josemaple.png");
+}
+
+h1 {
+  font-family: $handwritten;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: $red;
+}
+
+#timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $normal;
+  font-size: .7em;
+  margin-top: -43%;
+  letter-spacing: 5px;
+  border-radius: $radius;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: $radius;
+  box-shadow: 2px 2px 10px black;
+}
+
+.days {
+  background: $blue;
+}
+
+.hours {
+  background: $green;
+}
+
+.minutes {
+  background: $purple;
+}
+
+.seconds {
+  background: $gold;
+}
+
+.numbers {
+  font-family: $big;
+  color: $white;
+  font-size: 5em;
+}
