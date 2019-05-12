@@ -104,10 +104,11 @@ body {
 
 h1 {
   font-family: $handwritten;
-  font-size: 2em;
+  font-size: 3em;
   color: $red;
   position: relative;
   bottom: -20%;
+  text-shadow: -1px -1px 0 $white, 1px -1px 0 $white, -1px 1px 0 $white, 1px 1px 0 $white;
 }
 
 #timer {
