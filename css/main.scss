@@ -93,6 +93,7 @@ body {
   margin: 0 auto;
   width: 80%;
   @include small {
+    top: -22%;
     width: 90%;
   }
   @include medium {
@@ -132,6 +133,9 @@ h1 {
   font-size: .7em;
   letter-spacing: 5px;
   border-radius: $radius;
+  @include small {
+    font-size: .5rem;
+  }
 }
 
 .days, .hours, .minutes, .seconds {
@@ -139,6 +143,10 @@ h1 {
   padding: 20px;
   border-radius: $radius;
   box-shadow: 2px 2px 10px black;
+  @include small {
+    padding: 10px;
+    letter-spacing: 3px;
+  }
 }
 
 .days {
@@ -163,7 +171,7 @@ h1 {
   font-size: 5em;
   transition: opacity .5s ease-in;
   @include small {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   @include medium {
     font-size: 3rem;
