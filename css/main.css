@@ -73,17 +73,22 @@ body {
 @media (min-width: 360px) {
   .container {
     top: -22%;
-    width: 90%;
+    width: 80%;
   }
 }
 @media (min-width: 768px) {
   .container {
-    width: 70%;
+    width: 60%;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 50%;
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 30%;
   }
 }
 

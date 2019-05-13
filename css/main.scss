@@ -13,6 +13,7 @@ $white: white;
 $screen-sm-min: 360px;
 $screen-md-min: 768px;
 $screen-lg-min: 992px;
+$screen-xl-min: 1200px;
 
 @mixin small {
   @media (min-width: #{$screen-sm-min}) {
@@ -26,6 +27,12 @@ $screen-lg-min: 992px;
 }
 @mixin large {
   @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
       @content;
   }
 }
@@ -94,13 +101,16 @@ body {
   width: 80%;
   @include small {
     top: -22%;
-    width: 90%;
+    width: 80%;
   }
   @include medium {
-    width: 70%;
+    width: 60%;
   }
   @include large {
-    width: 50%;
+    width: 40%;
+  }
+  @include xl {
+    width: 30%;
   }
 }
 
